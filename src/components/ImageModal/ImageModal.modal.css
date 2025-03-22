@@ -1,0 +1,72 @@
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalwin {
+  background: white;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  position: relative;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+} */
+
+.img {
+  height: 700px;
+  width: 500px;
+  display: block;
+  object-fit: cover;
+}
+.btn {
+  background-color: black;
+
+  position: absolute;
+  right: 0.1px;
+  top: 0.1px;
+  padding: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 8px;
+}
+.wrapper {
+  background-color: black;
+  overflow: hidden;
+  text-align: center;
+  padding: 0;
+}
+.desc {
+  width: 500px;
+}
+.icon {
+  fill: white;
+}
+.btn:hover {
+  background: transparent;
+}
+.btn:hover .icon {
+  fill: black;
+}
