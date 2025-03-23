@@ -17,7 +17,7 @@ export default function ImageCard({
           className={css.img}
           src={small}
           alt={slug}
-          width={'400px'}
+          width={'400'}
           height={'340px'}
           onClick={() => onImageClick(regular)}
         />

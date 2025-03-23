@@ -38,8 +38,8 @@
   color: rgb(251, 255, 0);
   background-color: rgb(24, 7, 255);
   border-radius: 6px;
-  transition: color 300ms linear;
-   
+  transition: color 200ms linear, 
+	background-color 800ms linear;
 }
 
 .button:hover,
