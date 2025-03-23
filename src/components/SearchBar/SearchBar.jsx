@@ -27,8 +27,7 @@ export default function SearchBar({ onSubmit }) {
 			type="text"
 			name="topic"
 			autoComplete="off"
-			autoFocus
-			placeholder = "Search photos"
+			autoFocus placeholder = "Search photos"
 		  />
 		  <button className={css.button} type="submit">
 			Search

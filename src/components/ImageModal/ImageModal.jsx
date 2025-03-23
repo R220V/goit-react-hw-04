@@ -7,7 +7,7 @@ export default function ImageModal({ isOpen, onClose, imageUrl, alt }) {
 	return (
 	  <Modal 
 		isOpen={isOpen}
-		onRequestClose={onClose} 
+		onRequestClose={onClose}
 		className={css.modal}
 		overlayClassName={css.overlay}
 	  >

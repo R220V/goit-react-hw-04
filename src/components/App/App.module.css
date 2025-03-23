@@ -12,7 +12,7 @@
   
   .text {
 	text-align: center;
-	color: red;
+	color: rgb(132, 0, 255);
   }
   
   .text-error.error {

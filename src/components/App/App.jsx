@@ -46,11 +46,9 @@ try  {
 }  catch {
   setError(true)
   toast.error("Please reload your page",{
-  duration: 3000,
   position: 'top-right',
   className: `${css['text-error']} ${css['error']}`,
 });
-
 
     }finally{
       setIsLoad(false)
