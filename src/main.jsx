@@ -7,7 +7,7 @@ import 'modern-normalize';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <h1>hw4</h1>
+    {/* <h1>hw4</h1> */}
     <App />
   </StrictMode>,
 )

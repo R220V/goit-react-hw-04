@@ -15,8 +15,8 @@
 	color: red;
   }
   
-  .custom-toast-error.error {
-	background-color: red;
+  .text-error.error {
+	background-color: rgb(75, 65, 65);
 	font-size: 14px;
 	border-radius: 8px;
 	padding: 12px 24px;

@@ -1,19 +1,24 @@
 .container {
 	display: flex;
 	flex-direction: column;
+	
+
   }
   
   .img {
 	object-fit: cover;
+	border: 1px solid teal;
   }
   
   .info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 20px;
-	height: 130px;
-	background-color: #ffffff;
+	padding: 10px;
+	height: 120px;
+	background-color: rgb(205, 222, 233);
+	border: 1px solid teal;
+	margin-top:  2px;
   }
   
   .title {
@@ -36,5 +41,5 @@
 	font-size: 16px;
 	line-height: 2;
 	letter-spacing: 0.04em;
-	color: #2e2f42;
+	color: #414655;
   }

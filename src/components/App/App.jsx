@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import {fetchImages} from '../../imageApi'
 import toast, { Toaster } from 'react-hot-toast';
-
-
 import css from './App.module.css'
 import SearchBar from '../SearchBar/SearchBar';
 import ImageGallery from '../ImageGallery/ImageGallery'
@@ -30,11 +28,7 @@ const handleSearch =topic=>{
 }
 
   useEffect(() => {
-    if (search === '') {
-      return
-      
-    }
-    async function getPhoto() {
+    if (search === '') {return}  async function getPhoto() {
 try  {
   setIsLoad(true)
   setError(false)
@@ -51,10 +45,10 @@ try  {
   })
 }  catch {
   setError(true)
-  toast.error("This didn't work. Reload your page",{
-  duration: 4000,
+  toast.error("Please reload your page",{
+  duration: 3000,
   position: 'top-right',
-  className: `${css['custom-toast-error']} ${css['error']}`,
+  className: `${css['text-error']} ${css['error']}`,
 });
 
 
@@ -77,13 +71,13 @@ getPhoto()
   return(
 
     <div className={css.container}>
-<SearchBar onSearch={handleSearch}/>
+<SearchBar onSubmit={handleSearch}/>
 {error && <ErrorMessage/>}
 {image.length > 0 && (
         <ImageGallery items={image} onImageClick={openModal} />
       )}
 {isLoad && <Loader loading={isLoad} />}
-{image.length > 0 && !isLoad && hasMore && (
+{image.length > 0 && !isLoad && morePages && (
         <LoadMoreBtn page={page} onPage={setPage} />
       )}
        <ImageModal
